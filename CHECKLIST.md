@@ -14,7 +14,7 @@ Describe how you approached this assignment and what key problems you identified
 ```
 1. Token counting was not implemented - required for efficiency evaluation
 2. SQL validation was a stub - allowed dangerous queries through
-3. LLM returned UNANSWERABLE for valid analytical questions (83% success rate)
+3. LLM returned UNANSWERABLE for valid analytical questions
 4. No observability - couldn't debug or monitor pipeline behavior
 5. Schema was hardcoded with only basic column names - no value ranges or types
 6. DEFAULT_DB_PATH resolved to wrong directory
@@ -143,7 +143,7 @@ Describe how you approached this assignment and what key problems you identified
 ```
 1. Token counting implemented (was TODO stub)
 2. SQL validation implemented (was pass-through stub)
-3. 100% benchmark success rate (was 83% with basic prompts)
+3. 100% benchmark success rate (original baseline crashed/0%, naive fix achieved 83%)
 4. Schema enriched with value ranges and column types (was bare column names)
 5. Retry logic recovers from ambiguous LLM responses
 6. Fixed DEFAULT_DB_PATH bug, DB connection leaks, dead code
